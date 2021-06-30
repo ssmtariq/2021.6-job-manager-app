@@ -1,0 +1,12 @@
+spring:
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+  mail:
+    host: localhost
+    port: 2525
+    test-connection: false
+    username: ${gmail.username:admin}
+    password: ${gmail.password:admin}
+    properties:
+      mail.smtp.starttls.enable: true
